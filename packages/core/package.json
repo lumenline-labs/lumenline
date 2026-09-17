@@ -1,0 +1,44 @@
+{
+  "name": "@lumenline/core",
+  "version": "0.1.0",
+  "description": "Shared types, decimal and address utilities, and the RailAdapter interface for Lumenline.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumenline-labs/lumenline.git",
+    "directory": "packages/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "clean": "rm -rf dist .turbo",
+    "prepublishOnly": "node ../../scripts/assert-pnpm-publish.mjs",
+    "prepack": "node scripts/prepare-publish.mjs strip",
+    "postpack": "node scripts/prepare-publish.mjs restore"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^17.0.1",
+    "buffer": "^6.0.3",
+    "ulidx": "^2.4.1"
+  },
+  "devDependencies": {
+    "fast-check": "^4.10.0"
+  }
+}
