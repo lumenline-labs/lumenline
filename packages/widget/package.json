@@ -1,0 +1,47 @@
+{
+  "name": "@lumenline/widget",
+  "version": "0.1.4",
+  "description": "Drop-in web component for depositing to and withdrawing from Stellar over Lumenline.",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "node scripts/build-style.mjs && tsup",
+    "build:style": "node scripts/build-style.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "clean": "rm -rf dist .turbo src/generated-style.ts",
+    "prepublishOnly": "node ../../scripts/assert-pnpm-publish.mjs"
+  },
+  "dependencies": {
+    "@creit.tech/stellar-wallets-kit": "^2.6.0",
+    "@lumenline/core": "workspace:*",
+    "@lumenline/sdk": "workspace:*",
+    "@stellar/stellar-sdk": "^17.0.1",
+    "viem": "^2.56.3"
+  },
+  "devDependencies": {
+    "@lumenline/design-tokens": "workspace:*",
+    "@stellar/freighter-api": "^6.0.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "happy-dom": "^20.14.3",
+    "playwright": "^1.63.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  }
+}
