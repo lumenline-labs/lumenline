@@ -1,0 +1,17 @@
+{
+  "title": "Lumenline",
+  "pages": [
+    "index",
+    "getting-started",
+    "core-concepts",
+    "sdk-reference",
+    "relayer",
+    "router",
+    "widget",
+    "playground",
+    "security",
+    "bridge-walkthrough",
+    "contributing",
+    "faq"
+  ]
+}
