@@ -9,7 +9,7 @@ describe("PlaygroundFooter", () => {
 
     expect(screen.getByRole("link", { name: "Site" })).toHaveAttribute(
       "href",
-      "https://lumenline-site.vercel.app/",
+      "https://www.lumenlines.xyz/",
     );
     expect(screen.getByRole("link", { name: "Docs" })).toHaveAttribute(
       "href",

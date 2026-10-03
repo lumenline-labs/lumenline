@@ -7,7 +7,7 @@
  */
 export const LINKS = {
   /** apps/site's own current real deployment. */
-  home: "https://lumenline-site.vercel.app/",
+  home: "https://www.lumenlines.xyz/",
   /** apps/docs' own current real deployment. */
   docs: "https://lumenline-docs.vercel.app/",
   /** The public GitHub org/repo — confirmed real and live. */

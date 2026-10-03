@@ -9,7 +9,7 @@ describe("PlaygroundHeader", () => {
 
     expect(screen.getByRole("link", { name: /Lumenline.*Playground/s })).toHaveAttribute(
       "href",
-      "https://lumenline-site.vercel.app/",
+      "https://www.lumenlines.xyz/",
     );
     expect(screen.getByRole("link", { name: "Docs" })).toHaveAttribute(
       "href",

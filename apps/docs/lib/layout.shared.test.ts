@@ -12,7 +12,7 @@ describe("baseOptions", () => {
   it("links out to the real Site and Playground deployments", () => {
     const options = baseOptions();
     expect(options.links).toEqual([
-      { text: "Site", url: "https://lumenline-site.vercel.app/", external: true },
+      { text: "Site", url: "https://www.lumenlines.xyz/", external: true },
       { text: "Playground", url: "https://playground-tau-beige.vercel.app/", external: true },
     ]);
   });

@@ -15,7 +15,7 @@ export function baseOptions(): BaseLayoutProps {
     // deployments (their Vercel-assigned URLs — no custom domain live for either yet). `external:
     // true` since both are genuinely separate deployed apps, not routes within this one.
     links: [
-      { text: "Site", url: "https://lumenline-site.vercel.app/", external: true },
+      { text: "Site", url: "https://www.lumenlines.xyz/", external: true },
       { text: "Playground", url: "https://playground-tau-beige.vercel.app/", external: true },
     ],
     // `githubUrl` (rather than a manual entry in `links`) is fumadocs-ui's own built-in way to add
